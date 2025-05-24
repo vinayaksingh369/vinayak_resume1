@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinayak Singh | QA Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: #f9fafb;
+      --primary-light: #1e293b;
+      --accent-light: #6366f1;
+      --light-bg: #ffffff;
+      --gray-light: #e5e7eb;
+      --card-bg-light: #f1f5f9;
+      --shadow-light: rgba(0, 0, 0, 0.05);
+
+      --bg-dark: #0f172a;
+      --primary-dark: #f1f5f9;
+      --accent-dark: #8b5cf6;
+      --light-bg-dark: #1e293b;
+      --gray-dark: #334155;
+      --card-bg-dark: #1e293b;
+      --shadow-dark: rgba(255, 255, 255, 0.05);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg-light);
+      color: var(--primary-light);
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark {
+      background-color: var(--bg-dark);
+      color: var(--primary-dark);
+    }
+    header {
+      background-color: var(--light-bg);
+      padding: 2rem;
+      border-bottom: 1px solid var(--gray-light);
+      box-shadow: 0 1px 4px var(--shadow-light);
+      text-align: center;
+    }
+    body.dark header {
+      background-color: var(--light-bg-dark);
+      border-color: var(--gray-dark);
+      box-shadow: 0 1px 4px var(--shadow-dark);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent-light);
+    }
+    body.dark header h1 {
+      color: var(--accent-dark);
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+    .links {
+      margin-top: 1rem;
+    }
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--accent-light);
+      font-weight: 600;
+    }
+    body.dark .links a {
+      color: var(--accent-dark);
+    }
+    .theme-toggle {
+      margin-top: 1rem;
+    }
+    .theme-toggle button {
+      background: none;
+      border: 2px solid var(--accent-light);
+      color: var(--accent-light);
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    body.dark .theme-toggle button {
+      border-color: var(--accent-dark);
+      color: var(--accent-dark);
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: var(--accent-light);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--gray-light);
+      padding-bottom: 0.25rem;
+    }
+    body.dark h2 {
+      color: var(--accent-dark);
+      border-color: var(--gray-dark);
+    }
+    .skills, .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skills span, .tags span {
+      background: var(--card-bg-light);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    body.dark .skills span, body.dark .tags span {
+      background: var(--card-bg-dark);
+    }
+    .card {
+      background: var(--light-bg);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px var(--shadow-light);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    body.dark .card {
+      background: var(--light-bg-dark);
+      box-shadow: 0 2px 6px var(--shadow-dark);
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      margin-left: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--light-bg);
+      border-top: 1px solid var(--gray-light);
+      font-size: 14px;
+      color: #64748b;
+    }
+    body.dark footer {
+      background: var(--light-bg-dark);
+      border-color: var(--gray-dark);
+      color: #cbd5e1;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 1rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vinayak Singh</h1>
+    <p>Fresher • UAT & API Tester • B.Tech CSE</p>
+    <p>Email: vinayaksingh2172001@gmail.com | +91 8303605116</p>
+    <div class="links">
+      <a href="https://linkedin.com/in/vinayak-singh-5712b91a8" target="_blank">LinkedIn</a>
+      <a href="https://github.com/vinayaksingh369" target="_blank">GitHub</a>
+      <a href="https://xenodochial-wozniak-53ccdb.netlify.app/" target="_blank">Live Demo</a>
+    </div>
+    <div class="theme-toggle">
+      <button onclick="document.body.classList.toggle('dark')">Toggle Theme</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="container">
+    <section>
+      <h2>Career Objective</h2>
+      <p>Computer Science graduate with hands-on experience in ERP testing, UAT, and REST API validation using Postman. Strong communicator, team collaborator, and highly motivated to pursue a full-time role in quality assurance and software testing.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>UAT Testing</span><span>API Testing</span><span>Postman</span><span>Newman</span><span>Redmine</span>
+        <span>CRM Tools</span><span>SQL</span><span>REST APIs</span><span>OAuth 2.0</span><span>JSON</span>
+        <span>XML</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Internships</h2>
+      <div class="card">
+        <h3>Next Education – UAT & ERP Testing Intern</h3>
+        <p><small>Aug 2024 – Feb 2025</small></p>
+        <ul>
+          <li>Conducted UAT on ERP modules.</li>
+          <li>Wrote and executed test cases based on functional requirements.</li>
+          <li>Tracked bugs using Redmine and CRM tools.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Oasis Infobyte – Web Developer Intern</h3>
+        <p><small>Oct 2022 – Dec 2022</small></p>
+        <ul>
+          <li>Created responsive interfaces using HTML, CSS, Bootstrap.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>LetsGrowMore – Web Developer Intern</h3>
+        <p><small>Sep 2021 – Nov 2021</small></p>
+        <ul>
+          <li>Developed clean web layouts from UI wireframes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>API Testing Project</h3>
+        <ul>
+          <li>Used Postman to test endpoints from GitHub/Dummy APIs.</li>
+          <li>Validated CRUD operations, status codes, headers, JSON responses.</li>
+          <li>Used OAuth 2.0 and Bearer Token for authorization scenarios.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>ERP Testing</h3>
+        <ul>
+          <li>Executed functional and regression test cases on ERP modules.</li>
+          <li>Logged issues, wrote bug reports, and tracked resolution cycle.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Realtime Chat App</h3>
+        <ul>
+          <li>Developed using HTML, CSS, JavaScript, PHP & MySQL.</li>
+          <li>Enabled private messaging and dynamic chat sessions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>B.Tech in Computer Science & Engineering</strong><br>ITM University, Gwalior (2019–2023) | CGPA: 7.52</p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Cloud Architecting – AWS Academy</li>
+        <li>Cloud Foundations – AWS Academy</li>
+        <li>MTA: Intro to Python – Microsoft</li>
+        <li>Technical Support Fundamentals – Coursera</li>
+        <li>Data Science – Cisco</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <p>English, Hindi</p>
+    </section>
+  </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Vinayak Singh – Crafted with precision & purpose for QA opportunities.
+  </footer>
+</body>
+</html>
